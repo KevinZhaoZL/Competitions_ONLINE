@@ -1,0 +1,9 @@
+datset:pascal
+backbone:resnetv2
+out_stride:16
+lr:0.007
+lr_scheduler:poly
+loss_type:ce
+epoch:100
+base_size:513
+crop_size:513

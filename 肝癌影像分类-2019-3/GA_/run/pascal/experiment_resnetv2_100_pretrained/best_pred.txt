@@ -1,0 +1,6 @@
+0.9521931563623496
+
+resnetv2 100 pretrained
+
+
+0.70的score

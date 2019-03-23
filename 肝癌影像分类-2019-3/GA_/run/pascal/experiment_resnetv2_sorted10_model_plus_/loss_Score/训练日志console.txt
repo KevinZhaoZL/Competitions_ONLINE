@@ -1,0 +1,1016 @@
+/home/yuanye/Moun/1_PROJECTS/1-Python_r/win10_client_zl/UGPU_Server/venv1/bin/python /home/yuanye/Moun/0_TOOLS/1-Pycharm/helpers/pydev/pydevd.py --multiproc --qt-support=auto --client 127.0.0.1 --port 34857 --file /home/yuanye/Moun/1_PROJECTS/1-Python_r/win10_client_zl/UGPU_Server/train.py
+pydev debugger: process 22978 is connecting
+
+Connected to pydev debugger (build 183.4886.43)
+Namespace(backbone='resnetv2', base_size=513, batch_size=4, checkname='classifier-resnetv2', crop_size=513, cuda=True, dataset='pascal', epochs=100, eval_interval=1, freeze_bn=False, ft=False, gpu_ids=[0], loss_type='ce', lr=0.007, lr_scheduler='poly', momentum=0.9, nesterov=False, no_cuda=False, no_val=False, out_stride=16, resume=None, seed=1, start_epoch=0, sync_bn=False, test_batch_size=4, use_balanced_weights=False, use_sbd=False, weight_decay=0.0005, workers=4)
+Number of images in train: 2520
+Number of images in val: 1080
+Previous Model Loaded!
+Using poly LR Scheduler!
+Starting Epoch: 0
+Total Epoches: 100
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 0, learning rate = 0.0070,                 previous best = 0.0000
+/home/yuanye/.local/lib/python3.6/site-packages/torch/nn/_reduction.py:49: UserWarning: size_average and reduce args will be deprecated, please use reduction='mean' instead.
+  warnings.warn(warning.format(ret))
+Train loss: 0.166: 100%|██████████| 630/630 [02:30<00:00,  4.30it/s][Epoch: 0, numImages:  2520]
+Loss: 104.863
+
+Test loss: 0.158: 100%|██████████| 270/270 [00:19<00:00, 14.16it/s]
+Validation:
+[Epoch: 0, numImages:  1080]
+Test_loss:42.62471046671271, F1_1_Score:0.3579493231040847, F1_0_Score:0.7015341367247433, Score: 0.529741729914414
+Loss: 42.625
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 1, learning rate = 0.0069,                 previous best = 0.5297
+Train loss: 0.159: 100%|██████████| 630/630 [02:32<00:00,  4.16it/s]
+[Epoch: 1, numImages:  2520]
+Loss: 100.263
+Test loss: 0.160: 100%|██████████| 270/270 [00:18<00:00, 14.33it/s]
+Validation:
+[Epoch: 1, numImages:  1080]
+Test_loss:43.21765726804733, F1_1_Score:0.4269469805258668, F1_0_Score:0.7341453474124889, Score: 0.5805461639691779
+Loss: 43.218
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 2, learning rate = 0.0069,                 previous best = 0.5805
+Train loss: 0.152: 100%|██████████| 630/630 [02:28<00:00,  4.32it/s]
+[Epoch: 2, numImages:  2520]
+Loss: 95.661
+Test loss: 0.126: 100%|██████████| 270/270 [00:18<00:00, 14.34it/s]
+Validation:
+[Epoch: 2, numImages:  1080]
+Test_loss:34.152543533593416, F1_1_Score:0.626076202432114, F1_0_Score:0.7670154281219475, Score: 0.6965458152770307
+Loss: 34.153
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 3, learning rate = 0.0068,                 previous best = 0.6965
+Train loss: 0.149: 100%|██████████| 630/630 [02:29<00:00,  4.22it/s][Epoch: 3, numImages:  2520]
+Loss: 93.720
+
+Test loss: 0.106: 100%|██████████| 270/270 [00:18<00:00, 14.26it/s]
+Validation:
+[Epoch: 3, numImages:  1080]
+Test_loss:28.61510206758976, F1_1_Score:0.7263088414839307, F1_0_Score:0.7962700735367764, Score: 0.7612894575103535
+Loss: 28.615
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 4, learning rate = 0.0067,                 previous best = 0.7613
+Train loss: 0.140: 100%|██████████| 630/630 [02:28<00:00,  4.32it/s][Epoch: 4, numImages:  2520]
+Loss: 87.923
+
+Test loss: 0.131: 100%|██████████| 270/270 [00:18<00:00, 14.30it/s]
+Validation:
+[Epoch: 4, numImages:  1080]
+Test_loss:35.28242191672325, F1_1_Score:0.6834969056397513, F1_0_Score:0.6779867550236083, Score: 0.6807418303316798
+Loss: 35.282
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 5, learning rate = 0.0067,                 previous best = 0.7613
+Train loss: 0.133: 100%|██████████| 630/630 [02:28<00:00,  4.24it/s]
+[Epoch: 5, numImages:  2520]
+Loss: 84.002
+Test loss: 0.230: 100%|█████████▉| 269/270 [00:18<00:00, 15.09it/s]Validation:
+[Epoch: 5, numImages:  1080]
+Test_loss:62.05993624776602, F1_1_Score:0.6112123924107581, F1_0_Score:0.41271502904156415, Score: 0.5119637107261611
+Loss: 62.060
+Test loss: 0.230: 100%|██████████| 270/270 [00:18<00:00, 14.27it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 6, learning rate = 0.0066,                 previous best = 0.7613
+Train loss: 0.133: 100%|██████████| 630/630 [02:28<00:00,  4.16it/s]
+[Epoch: 6, numImages:  2520]
+Loss: 84.036
+Test loss: 0.108: 100%|██████████| 270/270 [00:18<00:00, 14.32it/s]
+Validation:
+[Epoch: 6, numImages:  1080]
+Test_loss:29.10317395068705, F1_1_Score:0.7217548656549579, F1_0_Score:0.7985015481782886, Score: 0.7601282069166233
+Loss: 29.103
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 7, learning rate = 0.0066,                 previous best = 0.7613
+Train loss: 0.127: 100%|██████████| 630/630 [02:28<00:00,  4.24it/s]
+[Epoch: 7, numImages:  2520]
+Loss: 79.746
+Test loss: 0.629: 100%|██████████| 270/270 [00:19<00:00, 14.20it/s]
+Validation:
+[Epoch: 7, numImages:  1080]
+Test_loss:169.7373238839209, F1_1_Score:0.5785791015028318, F1_0_Score:0.11066904591281748, Score: 0.3446240737078246
+Loss: 169.737
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 8, learning rate = 0.0065,                 previous best = 0.7613
+Train loss: 0.124: 100%|██████████| 630/630 [02:28<00:00,  4.26it/s][Epoch: 8, numImages:  2520]
+Loss: 78.027
+
+Test loss: 0.125: 100%|██████████| 270/270 [00:18<00:00, 14.24it/s]
+Validation:
+[Epoch: 8, numImages:  1080]
+Test_loss:33.6887893602252, F1_1_Score:0.7167746005251061, F1_0_Score:0.696416785780223, Score: 0.7065956931526646
+Loss: 33.689
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 9, learning rate = 0.0064,                 previous best = 0.7613
+Train loss: 0.127: 100%|██████████| 630/630 [02:30<00:00,  4.16it/s]
+[Epoch: 9, numImages:  2520]
+Loss: 80.066
+Test loss: 0.078: 100%|█████████▉| 269/270 [00:18<00:00, 15.02it/s]Validation:
+[Epoch: 9, numImages:  1080]
+Test_loss:20.935232035815716, F1_1_Score:0.7864591887983439, F1_0_Score:0.8401749708339166, Score: 0.8133170798161302
+Loss: 20.935
+Test loss: 0.078: 100%|██████████| 270/270 [00:18<00:00, 14.26it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 10, learning rate = 0.0064,                 previous best = 0.8133
+Train loss: 0.117: 100%|██████████| 630/630 [02:31<00:00,  4.27it/s]
+[Epoch: 10, numImages:  2520]
+Loss: 73.967
+Test loss: 0.085: 100%|█████████▉| 269/270 [00:19<00:00, 14.68it/s]Validation:
+[Epoch: 10, numImages:  1080]
+Test_loss:22.83424463123083, F1_1_Score:0.7914167603812764, F1_0_Score:0.826222416593881, Score: 0.8088195884875786
+Test loss: 0.085: 100%|██████████| 270/270 [00:19<00:00, 14.15it/s]
+Loss: 22.834
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 11, learning rate = 0.0063,                 previous best = 0.8133
+Train loss: 0.115: 100%|██████████| 630/630 [02:30<00:00,  4.21it/s][Epoch: 11, numImages:  2520]
+Loss: 72.280
+
+Test loss: 0.084: 100%|██████████| 270/270 [00:19<00:00, 14.12it/s]
+Validation:
+[Epoch: 11, numImages:  1080]
+Test_loss:22.58490714803338, F1_1_Score:0.7690306194480554, F1_0_Score:0.8352969033539368, Score: 0.8021637614009961
+Loss: 22.585
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 12, learning rate = 0.0062,                 previous best = 0.8133
+Train loss: 0.116: 100%|██████████| 630/630 [02:31<00:00,  4.27it/s]
+[Epoch: 12, numImages:  2520]
+Loss: 73.374
+Test loss: 0.168: 100%|██████████| 270/270 [00:19<00:00, 14.06it/s]
+Validation:
+[Epoch: 12, numImages:  1080]
+Test_loss:45.27901795133948, F1_1_Score:0.6725335996773729, F1_0_Score:0.5527491253729416, Score: 0.6126413625251572
+Loss: 45.279
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 13, learning rate = 0.0062,                 previous best = 0.8133
+Train loss: 0.109: 100%|██████████| 630/630 [02:31<00:00,  4.21it/s][Epoch: 13, numImages:  2520]
+Loss: 68.895
+
+Test loss: 0.073: 100%|██████████| 270/270 [00:19<00:00, 14.03it/s]
+Validation:
+[Epoch: 13, numImages:  1080]
+Test_loss:19.80735049955547, F1_1_Score:0.8196706021082217, F1_0_Score:0.8542699840005937, Score: 0.8369702930544077
+Loss: 19.807
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 14, learning rate = 0.0061,                 previous best = 0.8370
+Train loss: 0.114: 100%|██████████| 630/630 [02:31<00:00,  4.25it/s]
+[Epoch: 14, numImages:  2520]
+Loss: 71.769
+Test loss: 0.098: 100%|█████████▉| 269/270 [00:19<00:00, 14.39it/s]Validation:
+[Epoch: 14, numImages:  1080]
+Test_loss:26.55551585741341, F1_1_Score:0.7722483586263262, F1_0_Score:0.7682223981858738, Score: 0.7702353784061
+Loss: 26.556
+Test loss: 0.098: 100%|██████████| 270/270 [00:19<00:00, 14.06it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 15, learning rate = 0.0060,                 previous best = 0.8370
+Train loss: 0.114: 100%|██████████| 630/630 [02:31<00:00,  4.21it/s]
+[Epoch: 15, numImages:  2520]
+Loss: 71.939
+Test loss: 0.094: 100%|██████████| 270/270 [00:19<00:00, 14.16it/s]
+Validation:
+[Epoch: 15, numImages:  1080]
+Test_loss:25.29089076630771, F1_1_Score:0.7761264585247454, F1_0_Score:0.7787072805202447, Score: 0.777416869522495
+Loss: 25.291
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 16, learning rate = 0.0060,                 previous best = 0.8370
+Train loss: 0.110: 100%|██████████| 630/630 [02:31<00:00,  4.17it/s]
+[Epoch: 16, numImages:  2520]
+Loss: 69.385
+Test loss: 0.079: 100%|█████████▉| 269/270 [00:19<00:00, 14.37it/s]Validation:
+Test loss: 0.079: 100%|██████████| 270/270 [00:19<00:00, 14.09it/s]
+[Epoch: 16, numImages:  1080]
+Test_loss:21.258097674697638, F1_1_Score:0.8115451117229076, F1_0_Score:0.8342957204437481, Score: 0.8229204160833279
+Loss: 21.258
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 17, learning rate = 0.0059,                 previous best = 0.8370
+Train loss: 0.104: 100%|██████████| 630/630 [02:31<00:00,  4.12it/s]
+[Epoch: 17, numImages:  2520]
+Loss: 65.582
+Test loss: 0.080: 100%|██████████| 270/270 [00:19<00:00, 14.06it/s]
+Validation:
+[Epoch: 17, numImages:  1080]
+Test_loss:21.71122958511114, F1_1_Score:0.7858627248365897, F1_0_Score:0.8391270712167493, Score: 0.8124948980266695
+Loss: 21.711
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 18, learning rate = 0.0059,                 previous best = 0.8370
+Train loss: 0.099: 100%|██████████| 630/630 [02:31<00:00,  4.09it/s][Epoch: 18, numImages:  2520]
+Loss: 62.399
+
+Test loss: 0.076: 100%|██████████| 270/270 [00:18<00:00, 14.30it/s]
+Validation:
+[Epoch: 18, numImages:  1080]
+Test_loss:20.393354495987296, F1_1_Score:0.8153652334054527, F1_0_Score:0.8423408374610312, Score: 0.828853035433242
+Loss: 20.393
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 19, learning rate = 0.0058,                 previous best = 0.8370
+Train loss: 0.105: 100%|██████████| 630/630 [02:31<00:00,  4.24it/s][Epoch: 19, numImages:  2520]
+
+Loss: 65.977
+Test loss: 0.091: 100%|██████████| 270/270 [00:19<00:00, 13.78it/s]
+Validation:
+[Epoch: 19, numImages:  1080]
+Test_loss:24.57175532914698, F1_1_Score:0.7521057832671086, F1_0_Score:0.8337397059783833, Score: 0.792922744622746
+Loss: 24.572
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 20, learning rate = 0.0057,                 previous best = 0.8370
+Train loss: 0.100: 100%|██████████| 630/630 [02:31<00:00,  4.23it/s][Epoch: 20, numImages:  2520]
+Loss: 63.137
+
+Test loss: 0.074: 100%|██████████| 270/270 [00:18<00:00, 14.22it/s]
+Validation:
+[Epoch: 20, numImages:  1080]
+Test_loss:19.947051737457514, F1_1_Score:0.8120004348137624, F1_0_Score:0.8515008055461691, Score: 0.8317506201799658
+Loss: 19.947
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 21, learning rate = 0.0057,                 previous best = 0.8370
+Train loss: 0.097: 100%|██████████| 630/630 [02:30<00:00,  4.26it/s][Epoch: 21, numImages:  2520]
+Loss: 61.229
+
+Test loss: 0.061: 100%|██████████| 270/270 [00:18<00:00, 14.24it/s]
+Validation:
+[Epoch: 21, numImages:  1080]
+Test_loss:16.479582883417606, F1_1_Score:0.8268618246983027, F1_0_Score:0.8543749544226302, Score: 0.8406183895604664
+Loss: 16.480
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 22, learning rate = 0.0056,                 previous best = 0.8406
+Train loss: 0.096: 100%|██████████| 630/630 [02:31<00:00,  4.12it/s]
+[Epoch: 22, numImages:  2520]
+Loss: 60.548
+Test loss: 0.061: 100%|██████████| 270/270 [00:19<00:00, 14.17it/s]
+Validation:
+[Epoch: 22, numImages:  1080]
+Test_loss:16.525534953922033, F1_1_Score:0.8461268380927353, F1_0_Score:0.871879894086524, Score: 0.8590033660896297
+Loss: 16.526
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 23, learning rate = 0.0055,                 previous best = 0.8590
+Train loss: 0.094: 100%|██████████| 630/630 [02:31<00:00,  4.24it/s][Epoch: 23, numImages:  2520]
+Loss: 59.319
+
+Test loss: 0.075: 100%|██████████| 270/270 [00:19<00:00, 13.88it/s]
+Validation:
+[Epoch: 23, numImages:  1080]
+Test_loss:20.315991515293717, F1_1_Score:0.8103903795839686, F1_0_Score:0.8209887366859401, Score: 0.8156895581349544
+Loss: 20.316
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 24, learning rate = 0.0055,                 previous best = 0.8590
+Train loss: 0.094: 100%|██████████| 630/630 [02:31<00:00,  4.09it/s][Epoch: 24, numImages:  2520]
+Loss: 59.016
+
+Test loss: 0.070: 100%|██████████| 270/270 [00:19<00:00, 14.13it/s]
+Validation:
+[Epoch: 24, numImages:  1080]
+Test_loss:18.798010082915425, F1_1_Score:0.8216568155194816, F1_0_Score:0.8487644258134638, Score: 0.8352106206664727
+Loss: 18.798
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 25, learning rate = 0.0054,                 previous best = 0.8590
+Train loss: 0.090: 100%|██████████| 630/630 [02:30<00:00,  4.18it/s][Epoch: 25, numImages:  2520]
+Loss: 57.004
+
+Test loss: 0.225: 100%|██████████| 270/270 [00:19<00:00, 14.11it/s]
+Validation:
+[Epoch: 25, numImages:  1080]
+Test_loss:60.670657163485885, F1_1_Score:0.6486321339332461, F1_0_Score:0.45273757346137433, Score: 0.5506848536973102
+Loss: 60.671
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 26, learning rate = 0.0053,                 previous best = 0.8590
+Train loss: 0.089: 100%|██████████| 630/630 [02:30<00:00,  4.27it/s]
+[Epoch: 26, numImages:  2520]
+Loss: 56.173
+Test loss: 0.065: 100%|██████████| 270/270 [00:18<00:00, 14.21it/s]
+Validation:
+[Epoch: 26, numImages:  1080]
+Test_loss:17.570932164788246, F1_1_Score:0.8106639032313345, F1_0_Score:0.8616810302246014, Score: 0.836172466727968
+Loss: 17.571
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 27, learning rate = 0.0053,                 previous best = 0.8590
+Train loss: 0.096: 100%|██████████| 630/630 [02:29<00:00,  4.30it/s]
+[Epoch: 27, numImages:  2520]
+Loss: 60.448
+Test loss: 0.059: 100%|██████████| 270/270 [00:19<00:00, 14.12it/s]
+Validation:
+[Epoch: 27, numImages:  1080]
+Test_loss:15.951017269864678, F1_1_Score:0.8196738496032645, F1_0_Score:0.8666275478213477, Score: 0.8431506987123061
+Loss: 15.951
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 28, learning rate = 0.0052,                 previous best = 0.8590
+Train loss: 0.090: 100%|██████████| 630/630 [02:28<00:00,  4.27it/s]
+[Epoch: 28, numImages:  2520]
+Loss: 56.517
+Test loss: 0.087: 100%|██████████| 270/270 [00:18<00:00, 14.28it/s]
+Validation:
+[Epoch: 28, numImages:  1080]
+Test_loss:23.497273275628686, F1_1_Score:0.7530147192821517, F1_0_Score:0.8383103155692436, Score: 0.7956625174256977
+Loss: 23.497
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 29, learning rate = 0.0051,                 previous best = 0.8590
+Train loss: 0.085: 100%|██████████| 630/630 [02:28<00:00,  4.15it/s][Epoch: 29, numImages:  2520]
+Loss: 53.491
+
+Test loss: 0.056: 100%|█████████▉| 269/270 [00:18<00:00, 14.95it/s]Validation:
+[Epoch: 29, numImages:  1080]
+Test_loss:15.158590264618397, F1_1_Score:0.8392368136949809, F1_0_Score:0.8715319592115576, Score: 0.8553843864532693
+Loss: 15.159
+Test loss: 0.056: 100%|██████████| 270/270 [00:18<00:00, 14.28it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 30, learning rate = 0.0051,                 previous best = 0.8590
+Train loss: 0.084: 100%|██████████| 630/630 [02:29<00:00,  4.31it/s][Epoch: 30, numImages:  2520]
+
+Loss: 52.704
+Test loss: 0.066: 100%|██████████| 270/270 [00:19<00:00, 14.16it/s]
+Validation:
+[Epoch: 30, numImages:  1080]
+Test_loss:17.711517872288823, F1_1_Score:0.835844182038797, F1_0_Score:0.8591393352755154, Score: 0.8474917586571562
+Loss: 17.712
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 31, learning rate = 0.0050,                 previous best = 0.8590
+Train loss: 0.087: 100%|██████████| 630/630 [02:28<00:00,  4.27it/s][Epoch: 31, numImages:  2520]
+Loss: 54.943
+
+Test loss: 0.055: 100%|█████████▉| 269/270 [00:18<00:00, 15.27it/s]Validation:
+[Epoch: 31, numImages:  1080]
+Test loss: 0.055: 100%|██████████| 270/270 [00:18<00:00, 14.26it/s]
+Test_loss:14.8276919554919, F1_1_Score:0.8475324408328686, F1_0_Score:0.8724946445922087, Score: 0.8600135427125386
+Loss: 14.828
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 32, learning rate = 0.0049,                 previous best = 0.8600
+Train loss: 0.088: 100%|██████████| 630/630 [02:29<00:00,  4.31it/s]
+[Epoch: 32, numImages:  2520]
+Loss: 55.413
+Test loss: 0.052: 100%|██████████| 270/270 [00:18<00:00, 14.43it/s]
+Validation:
+[Epoch: 32, numImages:  1080]
+Test_loss:14.025572141632438, F1_1_Score:0.8375537902528892, F1_0_Score:0.8738244106635938, Score: 0.8556891004582415
+Loss: 14.026
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 33, learning rate = 0.0049,                 previous best = 0.8600
+Train loss: 0.081: 100%|██████████| 630/630 [02:28<00:00,  4.29it/s]
+[Epoch: 33, numImages:  2520]
+Loss: 50.832
+Test loss: 0.063: 100%|██████████| 270/270 [00:18<00:00, 14.31it/s]
+Validation:
+[Epoch: 33, numImages:  1080]
+Test_loss:17.068247428163886, F1_1_Score:0.8005840903142669, F1_0_Score:0.8585196842438132, Score: 0.8295518872790401
+Loss: 17.068
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 34, learning rate = 0.0048,                 previous best = 0.8600
+Train loss: 0.084: 100%|██████████| 630/630 [02:29<00:00,  4.23it/s][Epoch: 34, numImages:  2520]
+Loss: 52.626
+
+Test loss: 0.055: 100%|██████████| 270/270 [00:19<00:00, 14.09it/s]
+Validation:
+[Epoch: 34, numImages:  1080]
+Test_loss:14.8541114423424, F1_1_Score:0.8435051690120581, F1_0_Score:0.8761829952592443, Score: 0.8598440821356512
+Loss: 14.854
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 35, learning rate = 0.0048,                 previous best = 0.8600
+Train loss: 0.083: 100%|██████████| 630/630 [02:31<00:00,  4.16it/s]
+[Epoch: 35, numImages:  2520]
+Loss: 52.196
+Test loss: 0.063: 100%|██████████| 270/270 [00:19<00:00, 13.94it/s]
+Validation:
+[Epoch: 35, numImages:  1080]
+Test_loss:16.941764440387487, F1_1_Score:0.8170417513300331, F1_0_Score:0.862570040104564, Score: 0.8398058957172985
+Loss: 16.942
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 36, learning rate = 0.0047,                 previous best = 0.8600
+Train loss: 0.079: 100%|██████████| 630/630 [02:31<00:00,  4.21it/s]
+[Epoch: 36, numImages:  2520]
+Loss: 50.071
+Test loss: 0.063: 100%|██████████| 270/270 [00:18<00:00, 14.21it/s]
+Validation:
+[Epoch: 36, numImages:  1080]
+Test_loss:17.139927987009287, F1_1_Score:0.8241797485860474, F1_0_Score:0.8684262062982316, Score: 0.8463029774421396
+Loss: 17.140
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 37, learning rate = 0.0046,                 previous best = 0.8600
+Train loss: 0.077: 100%|██████████| 630/630 [02:31<00:00,  4.15it/s][Epoch: 37, numImages:  2520]
+Loss: 48.656
+
+Test loss: 0.055: 100%|██████████| 270/270 [00:19<00:00, 13.75it/s]
+Validation:
+[Epoch: 37, numImages:  1080]
+Test_loss:14.811614647507668, F1_1_Score:0.8472267448728806, F1_0_Score:0.8811153385051359, Score: 0.8641710416890083
+Loss: 14.812
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 38, learning rate = 0.0046,                 previous best = 0.8642
+Train loss: 0.077: 100%|██████████| 630/630 [02:30<00:00,  4.20it/s]
+[Epoch: 38, numImages:  2520]
+Loss: 48.752
+Test loss: 0.063: 100%|█████████▉| 269/270 [00:18<00:00, 14.30it/s]Validation:
+[Epoch: 38, numImages:  1080]
+Test_loss:16.9556897431612, F1_1_Score:0.8457646558253316, F1_0_Score:0.8571353917825514, Score: 0.8514500238039415
+Loss: 16.956
+Test loss: 0.063: 100%|██████████| 270/270 [00:18<00:00, 14.27it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 39, learning rate = 0.0045,                 previous best = 0.8642
+Train loss: 0.079: 100%|██████████| 630/630 [02:31<00:00,  4.21it/s]
+[Epoch: 39, numImages:  2520]
+Loss: 49.509
+Test loss: 0.065: 100%|██████████| 270/270 [00:19<00:00, 13.84it/s]
+Validation:
+[Epoch: 39, numImages:  1080]
+Test_loss:17.61160052381456, F1_1_Score:0.8067086383253956, F1_0_Score:0.8609135927422689, Score: 0.8338111155338322
+Loss: 17.612
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 40, learning rate = 0.0044,                 previous best = 0.8642
+Train loss: 0.079: 100%|██████████| 630/630 [02:31<00:00,  4.22it/s][Epoch: 40, numImages:  2520]
+Loss: 49.516
+
+Test loss: 0.053: 100%|██████████| 270/270 [00:19<00:00, 13.87it/s]
+Validation:
+[Epoch: 40, numImages:  1080]
+Test_loss:14.220753520727158, F1_1_Score:0.8407862045911301, F1_0_Score:0.8748696439005316, Score: 0.8578279242458309
+Loss: 14.221
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 41, learning rate = 0.0044,                 previous best = 0.8642
+Train loss: 0.075: 100%|██████████| 630/630 [02:31<00:00,  4.22it/s]
+[Epoch: 41, numImages:  2520]
+Loss: 47.180
+Test loss: 0.049: 100%|██████████| 270/270 [00:19<00:00, 14.08it/s]
+Validation:
+[Epoch: 41, numImages:  1080]
+Test_loss:13.101424036547542, F1_1_Score:0.8590088976740573, F1_0_Score:0.8872758862257353, Score: 0.8731423919498963
+Loss: 13.101
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 42, learning rate = 0.0043,                 previous best = 0.8731
+Train loss: 0.069: 100%|██████████| 630/630 [02:30<00:00,  4.23it/s]
+[Epoch: 42, numImages:  2520]
+Loss: 43.705
+Test loss: 0.055: 100%|██████████| 270/270 [00:18<00:00, 14.36it/s]
+Validation:
+[Epoch: 42, numImages:  1080]
+Test_loss:14.86987529322505, F1_1_Score:0.8497318740205143, F1_0_Score:0.8825481693123217, Score: 0.866140021666418
+Loss: 14.870
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 43, learning rate = 0.0042,                 previous best = 0.8731
+Train loss: 0.077: 100%|██████████| 630/630 [02:30<00:00,  4.16it/s]
+[Epoch: 43, numImages:  2520]
+Loss: 48.750
+Test loss: 0.049: 100%|██████████| 270/270 [00:18<00:00, 14.31it/s]
+Validation:
+[Epoch: 43, numImages:  1080]
+Test_loss:13.204114874824882, F1_1_Score:0.8526503523684315, F1_0_Score:0.8837583003996533, Score: 0.8682043263840424
+Loss: 13.204
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 44, learning rate = 0.0042,                 previous best = 0.8731
+Train loss: 0.074: 100%|██████████| 630/630 [02:31<00:00,  4.23it/s][Epoch: 44, numImages:  2520]
+Loss: 46.713
+
+Test loss: 0.048: 100%|██████████| 270/270 [00:19<00:00, 14.01it/s]
+Validation:
+[Epoch: 44, numImages:  1080]
+Test_loss:13.013040322810411, F1_1_Score:0.8699387989261163, F1_0_Score:0.8881324804480417, Score: 0.879035639687079
+Loss: 13.013
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 45, learning rate = 0.0041,                 previous best = 0.8790
+Train loss: 0.071: 100%|██████████| 630/630 [02:30<00:00,  4.25it/s][Epoch: 45, numImages:  2520]
+Loss: 44.926
+
+Test loss: 0.056: 100%|█████████▉| 269/270 [00:19<00:00, 14.77it/s]Validation:
+[Epoch: 45, numImages:  1080]
+Test_loss:15.07083055563271, F1_1_Score:0.8565054156834221, F1_0_Score:0.8683078229253008, Score: 0.8624066193043615
+Loss: 15.071
+Test loss: 0.056: 100%|██████████| 270/270 [00:19<00:00, 14.01it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 46, learning rate = 0.0040,                 previous best = 0.8790
+Train loss: 0.068: 100%|██████████| 630/630 [02:31<00:00,  4.13it/s]
+[Epoch: 46, numImages:  2520]
+Loss: 42.981
+Test loss: 0.049: 100%|█████████▉| 269/270 [00:19<00:00, 15.01it/s]Validation:
+[Epoch: 46, numImages:  1080]
+Test_loss:13.358762931078672, F1_1_Score:0.8545379236806123, F1_0_Score:0.8827274344824261, Score: 0.8686326790815192
+Loss: 13.359
+Test loss: 0.049: 100%|██████████| 270/270 [00:19<00:00, 14.14it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 47, learning rate = 0.0040,                 previous best = 0.8790
+Train loss: 0.072: 100%|██████████| 630/630 [02:30<00:00,  4.21it/s][Epoch: 47, numImages:  2520]
+Loss: 45.210
+
+Test loss: 0.049: 100%|██████████| 270/270 [00:19<00:00, 14.00it/s]
+Validation:
+[Epoch: 47, numImages:  1080]
+Test_loss:13.362603351473808, F1_1_Score:0.8584147318507024, F1_0_Score:0.8875999847953043, Score: 0.8730073583230034
+Loss: 13.363
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 48, learning rate = 0.0039,                 previous best = 0.8790
+Train loss: 0.070: 100%|██████████| 630/630 [02:31<00:00,  4.16it/s]
+[Epoch: 48, numImages:  2520]
+Loss: 44.167
+Test loss: 0.052: 100%|██████████| 270/270 [00:19<00:00, 13.91it/s]
+Validation:
+[Epoch: 48, numImages:  1080]
+Test_loss:13.985547449439764, F1_1_Score:0.8595709987505001, F1_0_Score:0.8855569816194795, Score: 0.8725639901849898
+Loss: 13.986
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 49, learning rate = 0.0038,                 previous best = 0.8790
+Train loss: 0.068: 100%|██████████| 630/630 [02:31<00:00,  4.21it/s]
+[Epoch: 49, numImages:  2520]
+Loss: 42.942
+Test loss: 0.064: 100%|██████████| 270/270 [00:19<00:00, 14.11it/s]
+Validation:
+[Epoch: 49, numImages:  1080]
+Test_loss:17.15556750074029, F1_1_Score:0.7971268810079705, F1_0_Score:0.8562029635213195, Score: 0.8266649222646449
+Loss: 17.156
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 50, learning rate = 0.0038,                 previous best = 0.8790
+Train loss: 0.062: 100%|██████████| 630/630 [02:31<00:00,  4.12it/s][Epoch: 50, numImages:  2520]
+Loss: 38.989
+
+Test loss: 0.064: 100%|██████████| 270/270 [00:19<00:00, 13.98it/s]
+Validation:
+[Epoch: 50, numImages:  1080]
+Test_loss:17.389592660591006, F1_1_Score:0.8297435374009144, F1_0_Score:0.8525876613169765, Score: 0.8411655993589455
+Loss: 17.390
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 51, learning rate = 0.0037,                 previous best = 0.8790
+Train loss: 0.067: 100%|██████████| 630/630 [02:31<00:00,  4.17it/s][Epoch: 51, numImages:  2520]
+Loss: 42.115
+
+Test loss: 0.044: 100%|██████████| 270/270 [00:18<00:00, 14.31it/s]
+Validation:
+[Epoch: 51, numImages:  1080]
+Test_loss:11.82179873995483, F1_1_Score:0.8639828158712386, F1_0_Score:0.8887329901217021, Score: 0.8763579029964703
+Loss: 11.822
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 52, learning rate = 0.0036,                 previous best = 0.8790
+Train loss: 0.064: 100%|██████████| 630/630 [02:31<00:00,  4.24it/s]
+[Epoch: 52, numImages:  2520]
+Loss: 40.430
+Test loss: 0.065: 100%|██████████| 270/270 [00:19<00:00, 14.11it/s]
+Validation:
+[Epoch: 52, numImages:  1080]
+Test_loss:17.451631726697087, F1_1_Score:0.837415798782003, F1_0_Score:0.8473642952477302, Score: 0.8423900470148666
+Loss: 17.452
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 53, learning rate = 0.0035,                 previous best = 0.8790
+Train loss: 0.061: 100%|██████████| 630/630 [02:31<00:00,  4.24it/s]
+[Epoch: 53, numImages:  2520]
+Loss: 38.175
+Test loss: 0.048: 100%|██████████| 270/270 [00:19<00:00, 14.04it/s]
+Validation:
+[Epoch: 53, numImages:  1080]
+Test_loss:12.93916785903275, F1_1_Score:0.8577847567427577, F1_0_Score:0.8865471994867965, Score: 0.872165978114777
+Loss: 12.939
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 54, learning rate = 0.0035,                 previous best = 0.8790
+Train loss: 0.059: 100%|██████████| 630/630 [02:31<00:00,  4.08it/s]
+[Epoch: 54, numImages:  2520]
+Loss: 37.124
+Test loss: 0.048: 100%|██████████| 270/270 [00:19<00:00, 14.01it/s]
+Validation:
+[Epoch: 54, numImages:  1080]
+Test_loss:12.925087569281459, F1_1_Score:0.8633522062214939, F1_0_Score:0.8876714504594687, Score: 0.8755118283404812
+Loss: 12.925
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 55, learning rate = 0.0034,                 previous best = 0.8790
+Train loss: 0.062: 100%|██████████| 630/630 [02:31<00:00,  3.95it/s]
+[Epoch: 55, numImages:  2520]
+Loss: 39.355
+Test loss: 0.049: 100%|██████████| 270/270 [00:18<00:00, 14.34it/s]
+Validation:
+[Epoch: 55, numImages:  1080]
+Test_loss:13.31542456895113, F1_1_Score:0.8465529547462987, F1_0_Score:0.8814686172398719, Score: 0.8640107859930852
+Loss: 13.315
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 56, learning rate = 0.0033,                 previous best = 0.8790
+Train loss: 0.062: 100%|██████████| 630/630 [02:32<00:00,  4.21it/s]
+[Epoch: 56, numImages:  2520]
+Loss: 38.976
+Test loss: 0.046: 100%|██████████| 270/270 [00:19<00:00, 13.76it/s]
+Validation:
+[Epoch: 56, numImages:  1080]
+Test_loss:12.33140460588038, F1_1_Score:0.8753448832505977, F1_0_Score:0.8892222136226783, Score: 0.882283548436638
+Loss: 12.331
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 57, learning rate = 0.0033,                 previous best = 0.8823
+Train loss: 0.061: 100%|██████████| 630/630 [02:30<00:00,  4.25it/s]
+[Epoch: 57, numImages:  2520]
+Loss: 38.383
+Test loss: 0.061: 100%|██████████| 270/270 [00:19<00:00, 14.00it/s]
+Validation:
+[Epoch: 57, numImages:  1080]
+Test_loss:16.500629043206573, F1_1_Score:0.8149455147302065, F1_0_Score:0.8662400317722048, Score: 0.8405927732512056
+Loss: 16.501
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 58, learning rate = 0.0032,                 previous best = 0.8823
+Train loss: 0.062: 100%|██████████| 630/630 [02:30<00:00,  4.27it/s]
+[Epoch: 58, numImages:  2520]
+Loss: 39.286
+Test loss: 0.058: 100%|██████████| 270/270 [00:19<00:00, 14.16it/s]
+Validation:
+[Epoch: 58, numImages:  1080]
+Test_loss:15.706009704619646, F1_1_Score:0.8306597305095713, F1_0_Score:0.8746071726090276, Score: 0.8526334515592995
+Loss: 15.706
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 59, learning rate = 0.0031,                 previous best = 0.8823
+Train loss: 0.057: 100%|██████████| 630/630 [02:30<00:00,  4.20it/s][Epoch: 59, numImages:  2520]
+Loss: 36.146
+
+Test loss: 0.036: 100%|██████████| 270/270 [00:19<00:00, 14.02it/s]
+Validation:
+[Epoch: 59, numImages:  1080]
+Test_loss:9.703877128660679, F1_1_Score:0.897189260740061, F1_0_Score:0.9110365861511767, Score: 0.9041129234456189
+Loss: 9.704
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 60, learning rate = 0.0031,                 previous best = 0.9041
+Train loss: 0.058: 100%|██████████| 630/630 [02:30<00:00,  4.22it/s][Epoch: 60, numImages:  2520]
+Loss: 36.749
+
+Test loss: 0.042: 100%|█████████▉| 269/270 [00:19<00:00, 14.43it/s]Validation:
+[Epoch: 60, numImages:  1080]
+Test_loss:11.3170778285712, F1_1_Score:0.8812401319883468, F1_0_Score:0.8958876831245398, Score: 0.8885639075564433
+Loss: 11.317
+Test loss: 0.042: 100%|██████████| 270/270 [00:19<00:00, 13.94it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 61, learning rate = 0.0030,                 previous best = 0.9041
+Train loss: 0.059: 100%|██████████| 630/630 [02:31<00:00,  4.25it/s]
+[Epoch: 61, numImages:  2520]
+Loss: 37.310
+Test loss: 0.043: 100%|██████████| 270/270 [00:19<00:00, 14.07it/s]
+Validation:
+[Epoch: 61, numImages:  1080]
+Test_loss:11.723285576328635, F1_1_Score:0.8738221501412402, F1_0_Score:0.891618036010025, Score: 0.8827200930756326
+Loss: 11.723
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 62, learning rate = 0.0029,                 previous best = 0.9041
+Train loss: 0.053: 100%|██████████| 630/630 [02:30<00:00,  4.25it/s][Epoch: 62, numImages:  2520]
+Loss: 33.488
+
+Test loss: 0.034: 100%|██████████| 270/270 [00:19<00:00, 14.10it/s]
+Validation:
+[Epoch: 62, numImages:  1080]
+Test_loss:9.308357078582048, F1_1_Score:0.8983424891163662, F1_0_Score:0.9103477789936641, Score: 0.9043451340550152
+Loss: 9.308
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 63, learning rate = 0.0029,                 previous best = 0.9043
+Train loss: 0.054: 100%|██████████| 630/630 [02:30<00:00,  4.25it/s]
+[Epoch: 63, numImages:  2520]
+Loss: 34.170
+Test loss: 0.050: 100%|██████████| 270/270 [00:19<00:00, 14.15it/s]
+Validation:
+[Epoch: 63, numImages:  1080]
+Test_loss:13.555152926594019, F1_1_Score:0.8705508065706051, F1_0_Score:0.8818159164283846, Score: 0.8761833614994949
+Loss: 13.555
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 64, learning rate = 0.0028,                 previous best = 0.9043
+Train loss: 0.057: 100%|██████████| 630/630 [02:31<00:00,  4.25it/s][Epoch: 64, numImages:  2520]
+Loss: 35.812
+
+Test loss: 0.042: 100%|██████████| 270/270 [00:19<00:00, 14.13it/s]
+Validation:
+[Epoch: 64, numImages:  1080]
+Test_loss:11.473170338198543, F1_1_Score:0.8670043570519498, F1_0_Score:0.8884251671864682, Score: 0.877714762119209
+Loss: 11.473
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 65, learning rate = 0.0027,                 previous best = 0.9043
+Train loss: 0.056: 100%|██████████| 630/630 [02:31<00:00,  3.97it/s]
+[Epoch: 65, numImages:  2520]
+Loss: 35.395
+Test loss: 0.092: 100%|█████████▉| 269/270 [00:19<00:00, 14.91it/s]Validation:
+[Epoch: 65, numImages:  1080]
+Test_loss:24.93200773000717, F1_1_Score:0.7912984702237326, F1_0_Score:0.8111387340847458, Score: 0.8012186021542391
+Loss: 24.932
+Test loss: 0.092: 100%|██████████| 270/270 [00:19<00:00, 14.05it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 66, learning rate = 0.0027,                 previous best = 0.9043
+Train loss: 0.053: 100%|██████████| 630/630 [02:31<00:00,  4.16it/s][Epoch: 66, numImages:  2520]
+Loss: 33.542
+
+Test loss: 0.032: 100%|██████████| 270/270 [00:19<00:00, 14.21it/s]
+Validation:
+[Epoch: 66, numImages:  1080]
+Test_loss:8.613620650023222, F1_1_Score:0.8918623951131115, F1_0_Score:0.9069609063290787, Score: 0.8994116507210951
+Loss: 8.614
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 67, learning rate = 0.0026,                 previous best = 0.9043
+Train loss: 0.051: 100%|██████████| 630/630 [02:30<00:00,  4.24it/s]
+[Epoch: 67, numImages:  2520]
+Loss: 32.277
+Test loss: 0.055: 100%|██████████| 270/270 [00:19<00:00, 14.07it/s]
+Validation:
+[Epoch: 67, numImages:  1080]
+Test_loss:14.95974869467318, F1_1_Score:0.8621512287887666, F1_0_Score:0.8767247508670828, Score: 0.8694379898279248
+Loss: 14.960
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 68, learning rate = 0.0025,                 previous best = 0.9043
+Train loss: 0.053: 100%|██████████| 630/630 [02:31<00:00,  4.22it/s][Epoch: 68, numImages:  2520]
+Loss: 33.294
+
+Test loss: 0.058: 100%|██████████| 270/270 [00:19<00:00, 13.96it/s]
+Validation:
+[Epoch: 68, numImages:  1080]
+Test_loss:15.56660295650363, F1_1_Score:0.8266968069064176, F1_0_Score:0.8725358482965627, Score: 0.8496163276014901
+Loss: 15.567
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 69, learning rate = 0.0024,                 previous best = 0.9043
+Train loss: 0.048: 100%|██████████| 630/630 [02:31<00:00,  4.24it/s]
+[Epoch: 69, numImages:  2520]
+Loss: 30.009
+Test loss: 0.029: 100%|██████████| 270/270 [00:19<00:00, 14.17it/s]
+Validation:
+[Epoch: 69, numImages:  1080]
+Test_loss:7.904132515192032, F1_1_Score:0.9040648018952799, F1_0_Score:0.9156381254816249, Score: 0.9098514636884525
+Loss: 7.904
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 70, learning rate = 0.0024,                 previous best = 0.9099
+Train loss: 0.051: 100%|██████████| 630/630 [02:31<00:00,  4.21it/s]
+[Epoch: 70, numImages:  2520]
+Loss: 32.278
+Test loss: 0.045: 100%|█████████▉| 269/270 [00:19<00:00, 14.32it/s]Validation:
+[Epoch: 70, numImages:  1080]
+Test_loss:12.024739135056734, F1_1_Score:0.8705978672544417, F1_0_Score:0.8832912025262333, Score: 0.8769445348903375
+Loss: 12.025
+Test loss: 0.045: 100%|██████████| 270/270 [00:19<00:00, 13.79it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 71, learning rate = 0.0023,                 previous best = 0.9099
+Train loss: 0.045: 100%|██████████| 630/630 [02:31<00:00,  4.25it/s]
+[Epoch: 71, numImages:  2520]
+Loss: 28.432
+Test loss: 0.037: 100%|██████████| 270/270 [00:18<00:00, 14.24it/s]
+Validation:
+[Epoch: 71, numImages:  1080]
+Test_loss:10.020960688591003, F1_1_Score:0.879546920897249, F1_0_Score:0.9012053464844466, Score: 0.8903761336908478
+Loss: 10.021
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 72, learning rate = 0.0022,                 previous best = 0.9099
+Train loss: 0.049: 100%|██████████| 630/630 [02:31<00:00,  4.22it/s]
+[Epoch: 72, numImages:  2520]
+Loss: 31.103
+Test loss: 0.040: 100%|█████████▉| 269/270 [00:19<00:00, 13.91it/s]Validation:
+[Epoch: 72, numImages:  1080]
+Test_loss:10.768061580136418, F1_1_Score:0.874157014322431, F1_0_Score:0.8957377720613451, Score: 0.8849473931918881
+Loss: 10.768
+Test loss: 0.040: 100%|██████████| 270/270 [00:19<00:00, 13.91it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 73, learning rate = 0.0022,                 previous best = 0.9099
+Train loss: 0.044: 100%|██████████| 630/630 [02:30<00:00,  4.27it/s][Epoch: 73, numImages:  2520]
+Loss: 28.020
+
+Test loss: 0.045: 100%|██████████| 270/270 [00:19<00:00, 13.89it/s]
+Validation:
+[Epoch: 73, numImages:  1080]
+Test_loss:12.283412858843803, F1_1_Score:0.8708608042339532, F1_0_Score:0.8800898239037057, Score: 0.8754753140688294
+Loss: 12.283
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 74, learning rate = 0.0021,                 previous best = 0.9099
+Train loss: 0.043: 100%|██████████| 630/630 [02:31<00:00,  4.21it/s][Epoch: 74, numImages:  2520]
+Loss: 26.988
+
+Test loss: 0.030: 100%|█████████▉| 269/270 [00:19<00:00, 14.35it/s]Validation:
+[Epoch: 74, numImages:  1080]
+Test_loss:8.084394162520766, F1_1_Score:0.9104485281721968, F1_0_Score:0.9190820877527407, Score: 0.9147653079624687
+Loss: 8.084
+Test loss: 0.030: 100%|██████████| 270/270 [00:19<00:00, 13.99it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 75, learning rate = 0.0020,                 previous best = 0.9148
+Train loss: 0.047: 100%|██████████| 630/630 [02:30<00:00,  4.24it/s]
+[Epoch: 75, numImages:  2520]
+Loss: 29.365
+Test loss: 0.035: 100%|██████████| 270/270 [00:19<00:00, 14.13it/s]
+Validation:
+[Epoch: 75, numImages:  1080]
+Test_loss:9.3776602037251, F1_1_Score:0.8896342907572894, F1_0_Score:0.9039399961943427, Score: 0.8967871434758161
+Loss: 9.378
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 76, learning rate = 0.0019,                 previous best = 0.9148
+Train loss: 0.045: 100%|██████████| 630/630 [02:31<00:00,  4.14it/s]
+[Epoch: 76, numImages:  2520]
+Loss: 28.089
+Test loss: 0.037: 100%|██████████| 270/270 [00:19<00:00, 14.07it/s]
+Validation:
+[Epoch: 76, numImages:  1080]
+Test_loss:10.002919113263488, F1_1_Score:0.8882006232986279, F1_0_Score:0.9018920556643815, Score: 0.8950463394815047
+Loss: 10.003
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 77, learning rate = 0.0019,                 previous best = 0.9148
+Train loss: 0.042: 100%|██████████| 630/630 [02:30<00:00,  4.23it/s]
+[Epoch: 77, numImages:  2520]
+Loss: 26.674
+Test loss: 0.031: 100%|██████████| 270/270 [00:18<00:00, 14.25it/s]
+Validation:
+[Epoch: 77, numImages:  1080]
+Test_loss:8.359761515632272, F1_1_Score:0.8952735407657635, F1_0_Score:0.9092782971471366, Score: 0.90227591895645
+Loss: 8.360
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 78, learning rate = 0.0018,                 previous best = 0.9148
+Train loss: 0.041: 100%|██████████| 630/630 [02:31<00:00,  4.12it/s][Epoch: 78, numImages:  2520]
+Loss: 25.897
+
+Test loss: 0.034: 100%|██████████| 270/270 [00:19<00:00, 14.15it/s]
+Validation:
+[Epoch: 78, numImages:  1080]
+Test_loss:9.253489127382636, F1_1_Score:0.8813450792757301, F1_0_Score:0.9030282218413316, Score: 0.8921866505585309
+Loss: 9.253
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 79, learning rate = 0.0017,                 previous best = 0.9148
+Train loss: 0.037: 100%|██████████| 630/630 [02:31<00:00,  4.18it/s][Epoch: 79, numImages:  2520]
+Loss: 23.401
+
+Test loss: 0.026: 100%|██████████| 270/270 [00:19<00:00, 14.13it/s]
+Validation:
+[Epoch: 79, numImages:  1080]
+Test_loss:7.042420407757163, F1_1_Score:0.9094516088611232, F1_0_Score:0.918226219768936, Score: 0.9138389143150296
+Loss: 7.042
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 80, learning rate = 0.0016,                 previous best = 0.9148
+Train loss: 0.037: 100%|██████████| 630/630 [02:31<00:00,  4.12it/s]
+[Epoch: 80, numImages:  2520]
+Loss: 23.448
+Test loss: 0.027: 100%|██████████| 270/270 [00:19<00:00, 14.00it/s]
+Validation:
+[Epoch: 80, numImages:  1080]
+Test_loss:7.279833488166332, F1_1_Score:0.9046744508772951, F1_0_Score:0.9152731455284663, Score: 0.9099737982028807
+Loss: 7.280
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 81, learning rate = 0.0016,                 previous best = 0.9148
+Train loss: 0.035: 100%|██████████| 630/630 [02:31<00:00,  4.18it/s]
+[Epoch: 81, numImages:  2520]
+Loss: 21.970
+Test loss: 0.038: 100%|██████████| 270/270 [00:19<00:00, 14.03it/s]
+Validation:
+[Epoch: 81, numImages:  1080]
+Test_loss:10.303749855607748, F1_1_Score:0.8842767995728336, F1_0_Score:0.8954879300197398, Score: 0.8898823647962867
+Loss: 10.304
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 82, learning rate = 0.0015,                 previous best = 0.9148
+Train loss: 0.036: 100%|██████████| 630/630 [02:31<00:00,  4.18it/s]
+[Epoch: 82, numImages:  2520]
+Loss: 22.582
+Test loss: 0.032: 100%|██████████| 270/270 [00:18<00:00, 14.37it/s]
+Validation:
+[Epoch: 82, numImages:  1080]
+Test_loss:8.650617565959692, F1_1_Score:0.8942613037878492, F1_0_Score:0.9084316520310969, Score: 0.9013464779094731
+Loss: 8.651
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 83, learning rate = 0.0014,                 previous best = 0.9148
+Train loss: 0.033: 100%|██████████| 630/630 [02:30<00:00,  4.24it/s]
+[Epoch: 83, numImages:  2520]
+Loss: 20.885
+Test loss: 0.033: 100%|██████████| 270/270 [00:19<00:00, 14.06it/s]
+Validation:
+[Epoch: 83, numImages:  1080]
+Test_loss:8.971827238798141, F1_1_Score:0.8872812977831046, F1_0_Score:0.9038893642503024, Score: 0.8955853310167035
+Loss: 8.972
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 84, learning rate = 0.0013,                 previous best = 0.9148
+Train loss: 0.034: 100%|██████████| 630/630 [02:31<00:00,  4.12it/s][Epoch: 84, numImages:  2520]
+Loss: 21.349
+
+Test loss: 0.028: 100%|██████████| 270/270 [00:19<00:00, 13.94it/s]
+Validation:
+[Epoch: 84, numImages:  1080]
+Test_loss:7.514362750574946, F1_1_Score:0.9024261944869635, F1_0_Score:0.9122613822045591, Score: 0.9073437883457613
+Loss: 7.514
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 85, learning rate = 0.0013,                 previous best = 0.9148
+Train loss: 0.035: 100%|██████████| 630/630 [02:31<00:00,  4.26it/s][Epoch: 85, numImages:  2520]
+Loss: 22.215
+
+Test loss: 0.028: 100%|██████████| 270/270 [00:19<00:00, 14.01it/s]
+Validation:
+[Epoch: 85, numImages:  1080]
+Test_loss:7.6170397605746984, F1_1_Score:0.9062997209529876, F1_0_Score:0.9172056099677475, Score: 0.9117526654603676
+Loss: 7.617
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 86, learning rate = 0.0012,                 previous best = 0.9148
+Train loss: 0.031: 100%|██████████| 630/630 [02:31<00:00,  4.24it/s]
+[Epoch: 86, numImages:  2520]
+Loss: 19.563
+Test loss: 0.027: 100%|██████████| 270/270 [00:19<00:00, 13.99it/s]
+Validation:
+[Epoch: 86, numImages:  1080]
+Test_loss:7.373267745599151, F1_1_Score:0.9094275717307482, F1_0_Score:0.9211557086770499, Score: 0.9152916402038991
+Loss: 7.373
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 87, learning rate = 0.0011,                 previous best = 0.9153
+Train loss: 0.028: 100%|██████████| 630/630 [02:31<00:00,  4.18it/s][Epoch: 87, numImages:  2520]
+Loss: 17.525
+
+Test loss: 0.025: 100%|██████████| 270/270 [00:19<00:00, 14.02it/s]
+Validation:
+[Epoch: 87, numImages:  1080]
+Test_loss:6.665818978101015, F1_1_Score:0.9064667322629496, F1_0_Score:0.9185627917963378, Score: 0.9125147620296437
+Loss: 6.666
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 88, learning rate = 0.0010,                 previous best = 0.9153
+Train loss: 0.026: 100%|██████████| 630/630 [02:31<00:00,  4.23it/s][Epoch: 88, numImages:  2520]
+Loss: 16.408
+
+Test loss: 0.024: 100%|██████████| 270/270 [00:19<00:00, 13.85it/s]
+Validation:
+[Epoch: 88, numImages:  1080]
+Test_loss:6.510573053732514, F1_1_Score:0.9145398097391607, F1_0_Score:0.9224438770529225, Score: 0.9184918433960416
+Loss: 6.511
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 89, learning rate = 0.0010,                 previous best = 0.9185
+Train loss: 0.027: 100%|██████████| 630/630 [02:30<00:00,  4.21it/s][Epoch: 89, numImages:  2520]
+Loss: 16.947
+
+Test loss: 0.028: 100%|█████████▉| 269/270 [00:18<00:00, 14.62it/s]Validation:
+[Epoch: 89, numImages:  1080]
+Test_loss:7.488519700244069, F1_1_Score:0.9096020078375122, F1_0_Score:0.9210484630115491, Score: 0.9153252354245307
+Loss: 7.489
+Test loss: 0.028: 100%|██████████| 270/270 [00:18<00:00, 14.31it/s]
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 90, learning rate = 0.0009,                 previous best = 0.9185
+Train loss: 0.024: 100%|██████████| 630/630 [02:31<00:00,  4.23it/s]
+[Epoch: 90, numImages:  2520]
+Loss: 15.031
+Test loss: 0.021: 100%|██████████| 270/270 [00:19<00:00, 14.05it/s]
+Validation:
+[Epoch: 90, numImages:  1080]
+Test_loss:5.802356321364641, F1_1_Score:0.9202285586339343, F1_0_Score:0.9263134449990419, Score: 0.923271001816488
+Loss: 5.802
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 91, learning rate = 0.0008,                 previous best = 0.9233
+Train loss: 0.022: 100%|██████████| 630/630 [02:30<00:00,  4.25it/s]
+[Epoch: 91, numImages:  2520]
+Loss: 14.045
+Test loss: 0.021: 100%|██████████| 270/270 [00:19<00:00, 14.08it/s]
+Validation:
+[Epoch: 91, numImages:  1080]
+Test_loss:5.548101395368576, F1_1_Score:0.9173389711516423, F1_0_Score:0.9251242288858483, Score: 0.9212316000187453
+Loss: 5.548
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 92, learning rate = 0.0007,                 previous best = 0.9233
+Train loss: 0.024: 100%|██████████| 630/630 [02:31<00:00,  4.13it/s][Epoch: 92, numImages:  2520]
+Loss: 15.056
+
+Test loss: 0.021: 100%|██████████| 270/270 [00:19<00:00, 14.05it/s]
+Validation:
+[Epoch: 92, numImages:  1080]
+Test_loss:5.722503798082471, F1_1_Score:0.9140492679779072, F1_0_Score:0.9241995398328365, Score: 0.9191244039053719
+Loss: 5.723
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 93, learning rate = 0.0006,                 previous best = 0.9233
+Train loss: 0.022: 100%|██████████| 630/630 [02:30<00:00,  4.14it/s]
+[Epoch: 93, numImages:  2520]
+Loss: 13.653
+Test loss: 0.021: 100%|██████████| 270/270 [00:19<00:00, 14.12it/s]
+Validation:
+[Epoch: 93, numImages:  1080]
+Test_loss:5.706622526049614, F1_1_Score:0.9250543194270769, F1_0_Score:0.9306802660663204, Score: 0.9278672927466987
+Loss: 5.707
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 94, learning rate = 0.0006,                 previous best = 0.9279
+Train loss: 0.019: 100%|██████████| 630/630 [02:30<00:00,  4.24it/s]
+[Epoch: 94, numImages:  2520]
+Loss: 12.059
+Test loss: 0.019: 100%|██████████| 270/270 [00:18<00:00, 14.33it/s]
+Validation:
+[Epoch: 94, numImages:  1080]
+Test_loss:5.192693196237087, F1_1_Score:0.9156250024137385, F1_0_Score:0.9232475667570613, Score: 0.9194362845853998
+Loss: 5.193
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 95, learning rate = 0.0005,                 previous best = 0.9279
+Train loss: 0.019: 100%|██████████| 630/630 [02:31<00:00,  4.25it/s][Epoch: 95, numImages:  2520]
+Loss: 12.019
+
+Test loss: 0.014: 100%|██████████| 270/270 [00:19<00:00, 14.10it/s]
+Validation:
+[Epoch: 95, numImages:  1080]
+Test_loss:3.7886681519448757, F1_1_Score:0.9309913957494051, F1_0_Score:0.9358373141921611, Score: 0.9334143549707832
+Loss: 3.789
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 96, learning rate = 0.0004,                 previous best = 0.9334
+Train loss: 0.018: 100%|██████████| 630/630 [02:31<00:00,  4.15it/s]
+[Epoch: 96, numImages:  2520]
+Loss: 11.369
+Test loss: 0.017: 100%|██████████| 270/270 [00:18<00:00, 14.25it/s]
+Validation:
+[Epoch: 96, numImages:  1080]
+Test_loss:4.523815147578716, F1_1_Score:0.9265937272519877, F1_0_Score:0.9326597134648372, Score: 0.9296267203584125
+Loss: 4.524
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 97, learning rate = 0.0003,                 previous best = 0.9334
+Train loss: 0.018: 100%|██████████| 630/630 [02:31<00:00,  4.20it/s]
+[Epoch: 97, numImages:  2520]
+Loss: 11.301
+Test loss: 0.020: 100%|█████████▉| 269/270 [00:19<00:00, 14.16it/s]Validation:
+Test loss: 0.020: 100%|██████████| 270/270 [00:19<00:00, 13.96it/s]
+[Epoch: 97, numImages:  1080]
+Test_loss:5.373156685382128, F1_1_Score:0.922457551291544, F1_0_Score:0.929323693783683, Score: 0.9258906225376136
+Loss: 5.373
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 98, learning rate = 0.0002,                 previous best = 0.9334
+Train loss: 0.017: 100%|██████████| 630/630 [02:32<00:00,  4.14it/s][Epoch: 98, numImages:  2520]
+Loss: 10.442
+
+Test loss: 0.017: 100%|██████████| 270/270 [00:19<00:00, 13.90it/s]
+Validation:
+[Epoch: 98, numImages:  1080]
+Test_loss:4.6563640832901, F1_1_Score:0.924579657501959, F1_0_Score:0.930958889654564, Score: 0.9277692735782614
+Loss: 4.656
+  0%|          | 0/630 [00:00<?, ?it/s]
+=>Epoches 99, learning rate = 0.0001,                 previous best = 0.9334
+Train loss: 0.018: 100%|██████████| 630/630 [02:30<00:00,  4.19it/s][Epoch: 99, numImages:  2520]
+Loss: 11.222
+
+Test loss: 0.014: 100%|██████████| 270/270 [00:19<00:00, 14.04it/s]
+Validation:
+[Epoch: 99, numImages:  1080]
+Test_loss:3.872012773528695, F1_1_Score:0.9298140916369942, F1_0_Score:0.9350900798555009, Score: 0.9324520857462475
+Loss: 3.872
+
+Process finished with exit code 0
+
