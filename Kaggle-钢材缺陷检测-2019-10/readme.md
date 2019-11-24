@@ -1,7 +1,6 @@
 ## 钢材缺陷检测
 
-[比赛链接]([https://www.kaggle.com/c/severstal-steel-defect-detection/])
-
+[比赛链接](https://www.kaggle.com/c/severstal-steel-defect-detection/)
 ---
 
 ### 1. 目标
